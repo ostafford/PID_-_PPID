@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if  [-f /proc/sys/kernel/pid_max]; then
+if  [ -f /proc/sys/kernel/pid_max ]; then
     pid_max=$(cat /proc/sys/kernel/pid_max)
     echo "Maximum process ID Value: $pid_max"
 else
